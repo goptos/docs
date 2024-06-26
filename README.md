@@ -85,6 +85,10 @@ goptos serve
 
 > There is no watch feature at this curren time, so you will need to re-run `goptos serve` each time you make code changes.
 
+## Learning Goptos
+
+Once you have successfully initialised your project, learn the basic principals behind writing a Goptos application by reading the [Goptos documentation](docs/Goptos.md).
+
 ## Contributing
 
 Please refer to https://github.com/goptos/app
