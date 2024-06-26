@@ -6,13 +6,7 @@ A fine-grained reactive web framework in Go.
 
 ## Prerequisites
 
-On a linux system the below prerequisites can be completed with the provided Makefile.
-
-``` bash
-make pre
-```
-
-Alternatively, install the following prerequisites manually.
+Install the following prerequisites.
 
 ### Go
 
@@ -20,9 +14,16 @@ Follow the installation steps provided by the Go docs. Reference the Makefile fo
 
 [Go: Download and install](https://go.dev/doc/install)
 
+Make sure `$HOME/go/bin` is in your PATH environment variable.
+
+``` bash
+# This is where go will install tools
+export PATH=$PATH:$HOME/go/bin
+```
+
 ### Goptos CLI
 
-If Go is not picking up the latest tagged version of the Goptos CLI, set `GONOPROXY` to `github.com/goptos` and try again.
+Install the latest version of Goptos CLI.
 
 ``` bash
 # Bypass go's proxy for goptos repos
@@ -31,11 +32,14 @@ export GONOPROXY=github.com/goptos
 # Install goptos cli
 go install github.com/goptos/goptos@latest
 ```
+
+> Only set set `GONOPROXY` if Go is not picking up the latest tagged version of Goptos CLI.
+
 ## Usage
 
 ### Setup
 
-Create a new directory for your project and use the `goptos init` to initialise it.
+Create a new directory for your project and use `goptos init` to initialise it.
 
 ``` bash
 # Create a new directory for this project
